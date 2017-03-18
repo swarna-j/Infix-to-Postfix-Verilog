@@ -1,0 +1,198 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/home/ubuntu37/Packages/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise
+-v 3 -s 3 -n 3 -fastpaths -xml postfix.twx postfix.ncd -o postfix.twr
+postfix.pcf
+
+Design file:              postfix.ncd
+Physical constraint file: postfix.pcf
+Device,package,speed:     xc6slx45,fgg484,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+postfix<0>  |         7.934(R)|      SLOW  |         4.310(R)|      FAST  |clk_BUFGP         |   0.000|
+postfix<1>  |         8.108(R)|      SLOW  |         4.392(R)|      FAST  |clk_BUFGP         |   0.000|
+postfix<2>  |         8.244(R)|      SLOW  |         4.500(R)|      FAST  |clk_BUFGP         |   0.000|
+postfix<3>  |         8.180(R)|      SLOW  |         4.466(R)|      FAST  |clk_BUFGP         |   0.000|
+postfix<4>  |         7.760(R)|      SLOW  |         4.210(R)|      FAST  |clk_BUFGP         |   0.000|
+postfix<5>  |         7.822(R)|      SLOW  |         4.249(R)|      FAST  |clk_BUFGP         |   0.000|
+postfix<6>  |         8.305(R)|      SLOW  |         4.541(R)|      FAST  |clk_BUFGP         |   0.000|
+postfix<7>  |         8.410(R)|      SLOW  |         4.647(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   22.632|         |         |         |
+infix<0>       |         |   23.261|         |         |
+infix<1>       |         |   23.261|         |         |
+infix<2>       |         |   23.261|         |         |
+infix<3>       |         |   23.261|         |         |
+infix<4>       |         |   23.261|         |         |
+infix<5>       |         |   23.261|         |         |
+infix<6>       |         |   23.261|         |         |
+infix<7>       |         |   23.261|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock infix<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+infix<0>       |    2.013|   -1.559|    0.194|    0.194|
+infix<1>       |    2.013|   -1.222|    0.684|    0.684|
+infix<2>       |    2.013|   -1.315|    0.623|    0.623|
+infix<3>       |    2.013|   -1.474|    0.269|    0.269|
+infix<4>       |    2.013|   -1.176|    0.731|    0.731|
+infix<5>       |    2.013|   -1.401|    0.410|    0.410|
+infix<6>       |    2.013|   -1.495|    0.409|    0.409|
+infix<7>       |    2.013|   -1.370|    0.524|    0.524|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock infix<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+infix<0>       |    2.013|   -1.689|   -0.234|   -0.234|
+infix<1>       |    2.013|   -1.352|    0.223|    0.223|
+infix<2>       |    2.013|   -1.445|    0.162|    0.162|
+infix<3>       |    2.013|   -1.604|   -0.149|   -0.149|
+infix<4>       |    2.013|   -1.306|    0.270|    0.270|
+infix<5>       |    2.013|   -1.531|   -0.051|   -0.051|
+infix<6>       |    2.013|   -1.625|   -0.052|   -0.052|
+infix<7>       |    2.013|   -1.500|    0.063|    0.063|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock infix<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+infix<0>       |    2.013|   -1.283|   -0.149|   -0.149|
+infix<1>       |    2.013|   -0.946|    0.281|    0.281|
+infix<2>       |    2.013|   -1.039|    0.220|    0.220|
+infix<3>       |    2.013|   -1.198|   -0.064|   -0.064|
+infix<4>       |    2.013|   -0.900|    0.328|    0.328|
+infix<5>       |    2.013|   -1.125|    0.009|    0.009|
+infix<6>       |    2.013|   -1.219|    0.006|    0.006|
+infix<7>       |    2.013|   -1.094|    0.121|    0.121|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock infix<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+infix<0>       |    2.013|   -1.611|    0.123|    0.123|
+infix<1>       |    2.013|   -1.274|    0.613|    0.613|
+infix<2>       |    2.013|   -1.367|    0.552|    0.552|
+infix<3>       |    2.013|   -1.526|    0.198|    0.198|
+infix<4>       |    2.013|   -1.228|    0.660|    0.660|
+infix<5>       |    2.013|   -1.453|    0.339|    0.339|
+infix<6>       |    2.013|   -1.547|    0.338|    0.338|
+infix<7>       |    2.013|   -1.422|    0.453|    0.453|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock infix<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+infix<0>       |    2.013|   -1.945|   -0.282|   -0.282|
+infix<1>       |    2.013|   -1.608|    0.175|    0.175|
+infix<2>       |    2.013|   -1.701|    0.114|    0.114|
+infix<3>       |    2.013|   -1.860|   -0.197|   -0.197|
+infix<4>       |    2.013|   -1.562|    0.222|    0.222|
+infix<5>       |    2.013|   -1.787|   -0.099|   -0.099|
+infix<6>       |    2.013|   -1.881|   -0.100|   -0.100|
+infix<7>       |    2.013|   -1.756|    0.015|    0.015|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock infix<5>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+infix<0>       |    2.013|   -1.355|   -0.010|   -0.010|
+infix<1>       |    2.013|   -1.018|    0.480|    0.480|
+infix<2>       |    2.013|   -1.111|    0.419|    0.419|
+infix<3>       |    2.013|   -1.270|    0.065|    0.065|
+infix<4>       |    2.013|   -0.972|    0.527|    0.527|
+infix<5>       |    2.013|   -1.197|    0.206|    0.206|
+infix<6>       |    2.013|   -1.291|    0.205|    0.205|
+infix<7>       |    2.013|   -1.166|    0.320|    0.320|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock infix<6>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+infix<0>       |    2.013|   -1.721|    0.027|    0.027|
+infix<1>       |    2.013|   -1.384|    0.488|    0.488|
+infix<2>       |    2.013|   -1.477|    0.427|    0.427|
+infix<3>       |    2.013|   -1.636|    0.112|    0.112|
+infix<4>       |    2.013|   -1.338|    0.535|    0.535|
+infix<5>       |    2.013|   -1.563|    0.214|    0.214|
+infix<6>       |    2.013|   -1.657|    0.213|    0.213|
+infix<7>       |    2.013|   -1.532|    0.328|    0.328|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock infix<7>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+infix<0>       |    2.013|   -1.049|   -0.096|   -0.096|
+infix<1>       |    2.013|   -0.712|    0.375|    0.375|
+infix<2>       |    2.013|   -0.805|    0.314|    0.314|
+infix<3>       |    2.013|   -0.964|   -0.011|   -0.011|
+infix<4>       |    2.013|   -0.666|    0.422|    0.422|
+infix<5>       |    2.013|   -0.891|    0.101|    0.101|
+infix<6>       |    2.013|   -0.985|    0.100|    0.100|
+infix<7>       |    2.013|   -0.860|    0.215|    0.215|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue Mar 14 21:58:40 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 467 MB
+
+
+
+
